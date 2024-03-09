@@ -1,4 +1,4 @@
-name: Infra-deploy
+name: Infra-check
 on:
   pull_request:
     branches:
