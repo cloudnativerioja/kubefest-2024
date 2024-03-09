@@ -63,7 +63,7 @@ jobs:
             const output = `#### Terraform Format and Style 🖌\`${{ steps.fmt.outputs.stdout }}\`
             #### Terraform Initialization ⚙️\`${{ steps.init.outputs.stdout }}\`
             #### Terraform Plan 📖\`${{ steps.plan.outputs.stdout }}\``;
-            github.issues.createComment({
+            github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
