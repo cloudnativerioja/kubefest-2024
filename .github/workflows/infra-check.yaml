@@ -56,7 +56,7 @@ jobs:
         continue-on-error: true
         # Comment in the PR
       - name: Comment PR
-        uses: actions/github-script@v3
+        uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -71,6 +71,7 @@ jobs:
             })
   # tfsec scanning
   tfsec:
+    needs: terraform
     name: tfsec sarif report
     runs-on: ubuntu-latest
     defaults:
