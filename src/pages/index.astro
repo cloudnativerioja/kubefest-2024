@@ -3,19 +3,14 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../layouts/Header.astro';
 import Footer from '../layouts/Footer.astro';
 
+import Preloader from '../components/Preloader.astro';
 import Countdown from '../components/Countdown.astro';
 ---
 
 <Layout title="Welcome to Astro." description="Hi!">
   <div class="main-wrapper">
-    <!-- Preloader start -->
-    <!-- <div id="preloader">
-      <div class="preloader">
-        <span></span>
-        <span></span>
-      </div>
-    </div> -->
-    <!-- Preloader End -->
+
+    <Preloader delay={350} />
 
     <Header />
 
