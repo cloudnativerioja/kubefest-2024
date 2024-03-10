@@ -37,7 +37,7 @@
 /*  01. Theme default CSS
 /*----------------------------------------*/
 /*-- Google Font --*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap");
 /*-- Common Style --*/
 
 *,
@@ -52,7 +52,7 @@ body {
   font-size: 14px;
   line-height: 1.75;
   font-weight: 400;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #4c4d56;
   outline: none;
   visibility: visible;
@@ -60,10 +60,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #fff;
-  color: '';
+  color: "";
 }
 
-body[dir='rtl'] {
+body[dir="rtl"] {
   text-align: right;
 }
 
@@ -73,7 +73,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #1a0a1e;
   font-weight: 700;
   margin-top: 0;
@@ -170,7 +170,7 @@ ol {
 }
 
 button,
-input[type='submit'] {
+input[type="submit"] {
   cursor: pointer;
 }
 
@@ -328,7 +328,7 @@ textarea:-ms-input-placeholder {
 .section-title .title {
   font-size: 50px;
   line-height: 62px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   color: #1a0a1e;
   position: relative;
@@ -350,7 +350,7 @@ textarea:-ms-input-placeholder {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #fc097c;
   text-transform: capitalize;
   margin-bottom: 5px;
@@ -368,7 +368,7 @@ textarea:-ms-input-placeholder {
 
 .section-title .sub-title::after {
   position: absolute;
-  content: '';
+  content: "";
   height: 15px;
   width: 100%;
   background-color: #fc097c;
@@ -444,7 +444,7 @@ textarea:-ms-input-placeholder {
   > .swiper-pagination-bullets
   .swiper-pagination-bullet::after,
 .swiper-pagination .swiper-pagination-bullet::after {
-  content: '';
+  content: "";
   position: absolute;
   left: -7px;
   top: -7px;
@@ -732,8 +732,8 @@ label {
 }
 
 /*Input Field & Select*/
-input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-    [type='file']
+input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+    [type="file"]
   ),
 textarea {
   box-shadow: none;
@@ -748,15 +748,15 @@ textarea {
   transition: all 0.3s linear;
 }
 
-input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-    [type='file']
+input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+    [type="file"]
   ):focus,
 textarea:focus {
   outline: none;
 }
 
-input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-    [type='file']
+input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+    [type="file"]
   )::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   font-size: 14px;
@@ -764,8 +764,8 @@ textarea::-webkit-input-placeholder {
   font-weight: 400;
 }
 
-input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-    [type='file']
+input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+    [type="file"]
   ):-moz-placeholder,
 textarea:-moz-placeholder {
   font-size: 14px;
@@ -773,8 +773,8 @@ textarea:-moz-placeholder {
   font-weight: 400;
 }
 
-input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-    [type='file']
+input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+    [type="file"]
   )::-moz-placeholder,
 textarea::-moz-placeholder {
   font-size: 14px;
@@ -782,8 +782,8 @@ textarea::-moz-placeholder {
   font-weight: 400;
 }
 
-input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-    [type='file']
+input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+    [type="file"]
   ):-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   font-size: 14px;
@@ -947,7 +947,7 @@ textarea:-ms-input-placeholder {
   border-radius: 0px;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   height: 50px;
   line-height: 48px;
@@ -986,7 +986,7 @@ textarea:-ms-input-placeholder {
 }
 
 .btn::before {
-  content: '';
+  content: "";
   border: 2px solid #000;
   padding: 0 30px;
   position: absolute;
@@ -1030,7 +1030,7 @@ textarea:-ms-input-placeholder {
   border-radius: 0px;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   height: 50px;
   line-height: 48px;
@@ -1095,7 +1095,7 @@ textarea:-ms-input-placeholder {
 .submit_btn::before,
 .btn-5::before {
   background: #fff;
-  content: '';
+  content: "";
   height: 155px;
   opacity: 0;
   position: absolute;
@@ -1111,7 +1111,7 @@ textarea:-ms-input-placeholder {
 .submit_btn::after,
 .btn-5::after {
   background: #fff;
-  content: '';
+  content: "";
   height: 20rem;
   opacity: 0;
   position: absolute;
@@ -1484,7 +1484,7 @@ textarea:-ms-input-placeholder {
 
 .header-menu .main-menu li a {
   font-size: 15px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   text-transform: capitalize;
   color: #1a0a1e;
@@ -1499,8 +1499,8 @@ textarea:-ms-input-placeholder {
 }
 
 .header-menu .main-menu li .menu-icon::after {
-  content: '\f16c';
-  font-family: 'flaticon';
+  content: "\f16c";
+  font-family: "flaticon";
   font-size: 10px;
   color: #94a0b9;
   margin-left: 5px;
@@ -1544,7 +1544,7 @@ textarea:-ms-input-placeholder {
 .header-menu .main-menu li .sub-menu li a {
   padding: 5px 25px;
   font-size: 15px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 600;
   text-transform: capitalize;
   display: block;
@@ -2077,7 +2077,7 @@ textarea:-ms-input-placeholder {
 }
 
 .header-top-wrapper .header-top-info ul li + li::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -2168,7 +2168,7 @@ textarea:-ms-input-placeholder {
   display: block;
   font-size: 16px;
   font-weight: 600;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #fc097c;
   padding: 5px 0px;
   position: relative;
@@ -2187,7 +2187,7 @@ textarea:-ms-input-placeholder {
 
 .offcanvas-menu .main-menu li .menu-expand::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 16px;
   height: 2px;
   background-color: #fc097c;
@@ -2199,7 +2199,7 @@ textarea:-ms-input-placeholder {
 
 .offcanvas-menu .main-menu li .menu-expand::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 2px;
   height: 16px;
   left: 50%;
@@ -2253,7 +2253,7 @@ textarea:-ms-input-placeholder {
 }
 
 .exvent-hero-section::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -2343,7 +2343,7 @@ textarea:-ms-input-placeholder {
 .exvent-hero-section .hero-content .sub-title {
   font-size: 30px;
   line-height: 32px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
   color: #ffffff;
@@ -2417,7 +2417,7 @@ textarea:-ms-input-placeholder {
 
 .exvent-hero-section .hero-content .btn-hero::after {
   position: absolute;
-  content: '';
+  content: "";
   height: 2px;
   width: 0%;
   background: #fc097c;
@@ -2435,7 +2435,7 @@ textarea:-ms-input-placeholder {
 
 .exvent-hero-section .hero-content .btn-hero::before {
   position: absolute;
-  content: '';
+  content: "";
   height: 2px;
   width: 100%;
   background: #fc097c;
@@ -2510,7 +2510,7 @@ textarea:-ms-input-placeholder {
 }
 
 .exvent-hero-section-02::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -2746,7 +2746,7 @@ textarea:-ms-input-placeholder {
 }
 
 .exvent-hero-section-03::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -2958,7 +2958,7 @@ textarea:-ms-input-placeholder {
 }
 
 .exvent-hero-section-04::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -3055,7 +3055,7 @@ textarea:-ms-input-placeholder {
 }
 
 .exvent-hero-section-05::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -3159,7 +3159,7 @@ textarea:-ms-input-placeholder {
 }
 
 .exvent-hero-section-06::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -3467,7 +3467,7 @@ textarea:-ms-input-placeholder {
 .event-counter-section .counter-item::before,
 .event-counter-section .counter-item::after {
   position: absolute;
-  content: '';
+  content: "";
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -3754,7 +3754,7 @@ textarea:-ms-input-placeholder {
 
 .about-area-2 .about-content .about-title .title-numb {
   font-size: 120px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   line-height: 1;
   font-weight: 700;
   color: #ffae4a;
@@ -3828,7 +3828,7 @@ textarea:-ms-input-placeholder {
 }
 
 .about-area-4 .about-title::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 5px;
   height: 290px;
@@ -4092,7 +4092,7 @@ textarea:-ms-input-placeholder {
 
 .speaker-section .speaker-link .single-speaker::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   top: 0;
@@ -4193,7 +4193,7 @@ textarea:-ms-input-placeholder {
   .speaker-link
   .single-speaker
   .speaker-thumb::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -4322,7 +4322,7 @@ textarea:-ms-input-placeholder {
 .speaker-section-3 .speaker-col .single-speaker .speaker-thumbnail::after,
 .event-single-page .speaker-col .single-speaker .speaker-thumbnail::after,
 .single-speaker-page .speaker-col .single-speaker .speaker-thumbnail::after {
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   border: 2px solid #ffae4a;
@@ -4567,7 +4567,7 @@ textarea:-ms-input-placeholder {
 }
 
 .speaker-section-4::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -4702,7 +4702,7 @@ textarea:-ms-input-placeholder {
   margin-bottom: -1px;
   font-size: 24px;
   font-weight: 500;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 60px 30px;
   cursor: pointer;
   z-index: 5;
@@ -4717,7 +4717,7 @@ textarea:-ms-input-placeholder {
 
 .schedule-area .sticky-col .schedule-side-nav .nav-link.active::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   border-style: solid;
@@ -5079,7 +5079,7 @@ textarea:-ms-input-placeholder {
   .plus-icon-3
   .plus-icon-shape::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 9px;
   left: 0px;
   width: 20px;
@@ -5110,7 +5110,7 @@ textarea:-ms-input-placeholder {
   .plus-icon-3
   .plus-icon-shape::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 9px;
   width: 2px;
@@ -5199,7 +5199,7 @@ textarea:-ms-input-placeholder {
   margin-right: -4px;
   font-size: 24px;
   font-weight: 500;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 30px 60px;
   display: inline;
   z-index: 5;
@@ -5227,7 +5227,7 @@ textarea:-ms-input-placeholder {
 
 .schedule-area-2 .schedule-top-nav .nav-link.active::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   border-style: solid;
@@ -5610,7 +5610,7 @@ textarea:-ms-input-placeholder {
 
 .pricing-area::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   top: 0;
@@ -5801,7 +5801,7 @@ textarea:-ms-input-placeholder {
   padding: 55px 0;
   padding-bottom: 30px;
   color: #1a0a1e;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
 }
 
@@ -5899,7 +5899,7 @@ textarea:-ms-input-placeholder {
 }
 
 .brand-area-2 .border-row::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
@@ -5934,7 +5934,7 @@ textarea:-ms-input-placeholder {
 }
 
 .brand-area-3::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -5968,7 +5968,7 @@ textarea:-ms-input-placeholder {
 }
 
 .past-event-gallery-area .single-gallery::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 0;
@@ -5980,7 +5980,7 @@ textarea:-ms-input-placeholder {
 }
 
 .past-event-gallery-area .single-gallery::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 230px;
   height: 230px;
@@ -6016,7 +6016,7 @@ textarea:-ms-input-placeholder {
   color: #ffffff;
   background-color: #fc097c;
   padding: 4px 10px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 1;
@@ -6045,7 +6045,7 @@ textarea:-ms-input-placeholder {
 }
 
 .gallery-area-2 .single-gallery::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -6075,7 +6075,7 @@ textarea:-ms-input-placeholder {
 
 .gallery-area-2 .single-gallery .gallery-text span {
   color: #fc097c;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 42px;
   transition: 0.5s;
   transition-delay: 0.3s;
@@ -6099,7 +6099,7 @@ textarea:-ms-input-placeholder {
 }
 
 .video-area::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -6321,7 +6321,7 @@ textarea:-ms-input-placeholder {
 }
 
 .play-btn a::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 120px;
   width: 120px;
@@ -6662,7 +6662,7 @@ textarea:-ms-input-placeholder {
 }
 
 .event-countdown-3::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -6707,9 +6707,9 @@ textarea:-ms-input-placeholder {
   .counter-wrapper
   .exvent-countdown-inner-3
   .single-countdown::after {
-  content: ':';
+  content: ":";
   position: absolute;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 72px;
   right: -10px;
   top: -35px;
@@ -6808,7 +6808,7 @@ textarea:-ms-input-placeholder {
 .event-countdown-5 .counter-wrapper {
   transform: translateY(-100px);
   padding: 60px 0;
-  background: #ffffff url('../images/shape/counter-pattarn-bg.png') left top
+  background: #ffffff url("../images/shape/counter-pattarn-bg.png") left top
     no-repeat;
   border-radius: 10px;
   box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.15);
@@ -6841,9 +6841,9 @@ textarea:-ms-input-placeholder {
   .counter-wrapper
   .exvent-countdown-inner-5
   .single-countdown::after {
-  content: ':';
+  content: ":";
   position: absolute;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 68px;
   right: -10px;
   top: -35px;
@@ -7324,7 +7324,7 @@ textarea:-ms-input-placeholder {
   top: 100%;
   right: 0;
   transform: translateX(-50%);
-  content: '';
+  content: "";
   border-top: 8px solid #fff;
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
@@ -7555,7 +7555,7 @@ textarea:-ms-input-placeholder {
 }
 
 .cta-area::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -7704,8 +7704,8 @@ textarea:-ms-input-placeholder {
   .accordion-item
   .accordion-header
   .accordion-button::after {
-  content: '\f106';
-  font-family: 'Font Awesome 5 Free';
+  content: "\f106";
+  font-family: "Font Awesome 5 Free";
   background-image: none;
 }
 
@@ -7727,8 +7727,8 @@ textarea:-ms-input-placeholder {
   .accordion-item
   .accordion-header
   .accordion-button:not(.collapsed)::after {
-  content: '\f107';
-  font-family: 'Font Awesome 5 Free';
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
   background-image: none;
   transform: none;
 }
@@ -7822,8 +7822,8 @@ textarea:-ms-input-placeholder {
   .event-list-top-bar
   .event-list-search
   .single-form
-  input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-    [type='file']
+  input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+    [type="file"]
   ),
 .event-list-page-wrap
   .event-list-top-bar
@@ -7842,8 +7842,8 @@ textarea:-ms-input-placeholder {
   .event-list-top-bar
   .event-list-search
   .single-form
-  input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-    [type='file']
+  input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+    [type="file"]
   )::-webkit-input-placeholder,
 .event-list-page-wrap
   .event-list-top-bar
@@ -7859,8 +7859,8 @@ textarea:-ms-input-placeholder {
   .event-list-top-bar
   .event-list-search
   .single-form
-  input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-    [type='file']
+  input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+    [type="file"]
   ):-moz-placeholder,
 .event-list-page-wrap
   .event-list-top-bar
@@ -7876,8 +7876,8 @@ textarea:-ms-input-placeholder {
   .event-list-top-bar
   .event-list-search
   .single-form
-  input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-    [type='file']
+  input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+    [type="file"]
   )::-moz-placeholder,
 .event-list-page-wrap
   .event-list-top-bar
@@ -7893,8 +7893,8 @@ textarea:-ms-input-placeholder {
   .event-list-top-bar
   .event-list-search
   .single-form
-  input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-    [type='file']
+  input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+    [type="file"]
   ):-ms-input-placeholder,
 .event-list-page-wrap
   .event-list-top-bar
@@ -7920,7 +7920,7 @@ textarea:-ms-input-placeholder {
   .event-list-top-bar
   .event-list-search
   .single-form.form-border::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -5px;
   top: 50%;
@@ -8028,7 +8028,7 @@ textarea:-ms-input-placeholder {
   border: 2px solid #ebebeb;
   border-radius: 5px;
   font-size: 14px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   padding: 0 45px;
   color: #1a0a1e;
@@ -8292,7 +8292,7 @@ textarea:-ms-input-placeholder {
   .price {
   font-size: 24px;
   line-height: 30px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 600;
   color: #1a0a1e;
 }
@@ -8304,7 +8304,7 @@ textarea:-ms-input-placeholder {
   .title {
   font-size: 20px;
   line-height: 24px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   color: #1a0a1e;
   margin-top: 15px;
@@ -8371,7 +8371,7 @@ textarea:-ms-input-placeholder {
   .ticket-link {
   font-size: 14px;
   line-height: 24px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 600;
   color: #ffae4a;
   text-decoration: underline;
@@ -8414,7 +8414,7 @@ textarea:-ms-input-placeholder {
 .event-list-page-wrap
   .event-list-content-wrap
   .event-list-item.event-list::before {
-  content: '';
+  content: "";
   width: 1px;
   height: 130%;
   background-color: #ebebeb;
@@ -8471,7 +8471,7 @@ textarea:-ms-input-placeholder {
   left: 0;
   top: 0;
   font-size: 12px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   display: inline-block;
   padding: 8px;
@@ -8665,7 +8665,7 @@ textarea:-ms-input-placeholder {
   .skill-header
   .skill-title {
   font-size: 12px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   line-height: 24px;
   font-weight: 600;
   color: #120e1d;
@@ -8874,8 +8874,8 @@ textarea:-ms-input-placeholder {
 .exvent-sidebar
   .sidebar-widget
   .search-form
-  input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-    [type='file']
+  input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+    [type="file"]
   ) {
   width: 100%;
   height: 50px;
@@ -8893,8 +8893,8 @@ textarea:-ms-input-placeholder {
 .exvent-sidebar
   .sidebar-widget
   .search-form
-  input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-    [type='file']
+  input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+    [type="file"]
   )::-moz-placeholder {
   font-weight: 500;
   color: #797e82;
@@ -8903,8 +8903,8 @@ textarea:-ms-input-placeholder {
 .exvent-sidebar
   .sidebar-widget
   .search-form
-  input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-    [type='file']
+  input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+    [type="file"]
   ):-ms-input-placeholder {
   font-weight: 500;
   color: #797e82;
@@ -8913,8 +8913,8 @@ textarea:-ms-input-placeholder {
 .exvent-sidebar
   .sidebar-widget
   .search-form
-  input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-    [type='file']
+  input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+    [type="file"]
   )::placeholder {
   font-weight: 500;
   color: #797e82;
@@ -8923,8 +8923,8 @@ textarea:-ms-input-placeholder {
 .exvent-sidebar
   .sidebar-widget
   .search-form
-  input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-    [type='file']
+  input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+    [type="file"]
   ):focus {
   border-color: #8d8d8d;
 }
@@ -8955,7 +8955,7 @@ textarea:-ms-input-placeholder {
 .exvent-sidebar .sidebar-widget .category .category-item a {
   display: flex;
   font-size: 14px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #666666;
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -8988,7 +8988,7 @@ textarea:-ms-input-placeholder {
 }
 
 .exvent-sidebar .sidebar-widget .sidebar-offer::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -9174,7 +9174,7 @@ textarea:-ms-input-placeholder {
   margin-top: 15px;
   padding: 0 20px;
   display: block;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: #1a0a1e;
@@ -9244,7 +9244,7 @@ textarea:-ms-input-placeholder {
 .widget-info ul li .info-text {
   font-size: 16px;
   line-height: 20px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 600;
   color: #c4c5c7;
 }
@@ -9290,7 +9290,7 @@ textarea:-ms-input-placeholder {
 
 .footer-widget .footer-widget-title {
   font-size: 20px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 600;
   color: #ffffff;
 }
@@ -9400,7 +9400,7 @@ textarea:-ms-input-placeholder {
 }
 
 .footer-section::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -9425,13 +9425,13 @@ textarea:-ms-input-placeholder {
 }
 
 .footer-newsletter::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  background-image: url('../images/shape/footer_contact_object.png');
+  background-image: url("../images/shape/footer_contact_object.png");
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -1;
@@ -9471,8 +9471,8 @@ textarea:-ms-input-placeholder {
 }
 
 .footer-newsletter-form
-  input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-    [type='file']
+  input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+    [type="file"]
   ) {
   width: 100%;
   height: 60px;
@@ -9488,8 +9488,8 @@ textarea:-ms-input-placeholder {
 
 @media only screen and (max-width: 575px) {
   .footer-newsletter-form
-    input:not([type='submit']):not([type='checkbox']):not([type='radio']):not(
-      [type='file']
+    input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not(
+      [type="file"]
     ) {
     height: 50px;
     padding: 0 25px;
@@ -9615,7 +9615,7 @@ textarea:-ms-input-placeholder {
 .copyright-text p {
   font-size: 14px;
   color: #c4c5c7;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   opacity: 0.6;
 }
 
@@ -9638,7 +9638,7 @@ textarea:-ms-input-placeholder {
 
 .progress-wrap::after {
   position: absolute;
-  content: '\f108';
+  content: "\f108";
   font-family: flaticon !important;
   text-align: center;
   line-height: 45px;

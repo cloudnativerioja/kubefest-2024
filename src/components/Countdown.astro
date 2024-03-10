@@ -1,12 +1,13 @@
 ---
+interface Props {
+  date: string;
+}
+
+const { date } = Astro.props;
 ---
 
 <!-- Countdown Start -->
-<div
-  class="exvent-countdown countdown"
-  data-countdown="2024/04/06"
-  data-format="short"
->
+<div class="exvent-countdown countdown" data-countdown={date}>
   <div class="single-countdown">
     <span class="count countdown__time daysLeft"></span>
     <span class="value countdown__time daysText"></span>
@@ -27,7 +28,7 @@
 <!-- Countdown End -->
 
 <script>
-  function makeTimer(endDate, element, format) {
+  function makeTimer(endDate, element) {
     var today = new Date();
     var bigDay = new Date(endDate),
       msPerDay = 24 * 60 * 60 * 1000,
@@ -44,22 +45,6 @@
     var yearsLeft = 0;
     var monthsLeft = 0;
     var weeksLeft = 0;
-
-    if (format != 'short') {
-      if (daysLeft > 365) {
-        yearsLeft = Math.floor(daysLeft / 365);
-        daysLeft = daysLeft % 365;
-      }
-
-      if (daysLeft > 30) {
-        monthsLeft = Math.floor(daysLeft / 30);
-        daysLeft = daysLeft % 30;
-      }
-      if (daysLeft > 7) {
-        weeksLeft = Math.floor(daysLeft / 7);
-        daysLeft = daysLeft % 7;
-      }
-    }
 
     var yearsLeftStr = yearsLeft < 10 ? '0' + yearsLeft : yearsLeft,
       monthsLeftStr = monthsLeft < 10 ? '0' + monthsLeft : monthsLeft,
@@ -91,7 +76,7 @@
       dayTxt: element.querySelectorAll('.daysText'),
       hourTxt: element.querySelectorAll('.hoursText'),
       minTxt: element.querySelectorAll('.minsText'),
-      secTxt: element.querySelectorAll('.secsText'),
+      secTxt: element.querySelectorAll('.secsText')
     };
 
     var elNumber = markup.wrapper.length;
@@ -140,11 +125,10 @@
     });
   }
 
-  document.querySelectorAll('.countdown').forEach(function (element) {
-    var endDate = element.dataset.countdown;
-    var format = element.dataset.format;
-    setInterval(function () {
-      makeTimer(endDate, element, format);
+  document.querySelectorAll('.countdown').forEach((element: any) => {
+    const endDate = element.dataset.countdown;
+    setInterval(() => {
+      makeTimer(endDate, element);
     }, 0);
   });
 </script>
