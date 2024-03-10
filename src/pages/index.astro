@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../layouts/Header.astro';
 import Footer from '../layouts/Footer.astro';
+
+import Countdown from '../components/Countdown.astro';
 ---
 
 <Layout title="Welcome to Astro." description="Hi!">
@@ -60,30 +62,7 @@ import Footer from '../layouts/Footer.astro';
           data-aos-delay="650"
         >
           <div class="col-md-10 text-center">
-            <!-- Countdown Start -->
-            <div
-              class="exvent-countdown countdown"
-              data-countdown="2026/04/26"
-              data-format="short"
-            >
-              <div class="single-countdown">
-                <span class="count countdown__time daysLeft"></span>
-                <span class="value countdown__time daysText"></span>
-              </div>
-              <div class="single-countdown countdown-2">
-                <span class="count countdown__time hoursLeft"></span>
-                <span class="value countdown__time hoursText"></span>
-              </div>
-              <div class="single-countdown countdown-3">
-                <span class="count countdown__time minsLeft"></span>
-                <span class="value countdown__time minsText"></span>
-              </div>
-              <div class="single-countdown countdown-4">
-                <span class="count countdown__time secsLeft"></span>
-                <span class="value countdown__time secsText"></span>
-              </div>
-            </div>
-            <!-- Countdown End -->
+            <Countdown />
           </div>
         </div>
       </div>
