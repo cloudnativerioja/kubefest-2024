@@ -1,0 +1,34 @@
+---
+import 'bootstrap/dist/css/bootstrap.css';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <slot />
+  </body>
+  <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script is:inline>
+    AOS.init();
+  </script>
+</html>
