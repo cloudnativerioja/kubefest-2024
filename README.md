@@ -37,10 +37,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
 ## 🏗️ Infrastructure
 
 ### Overview
@@ -58,3 +54,7 @@ In this stage, Terraform configurations are validated whenever a pull request is
 
 **_Deploy Stage (On Master Branch)_**
 In this stage, Terraform configurations are applied to deploy infrastructure when changes are merged into the master branch. This ensures that the changes are automatically deployed to production-like environments.
+
+## 👀 Want to learn more?
+
+Feel free to check [Astro documentation](https://docs.astro.build).
