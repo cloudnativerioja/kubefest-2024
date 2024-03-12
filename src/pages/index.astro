@@ -5,6 +5,7 @@ import Footer from '../layouts/Footer.astro';
 
 import Preloader from '../components/Preloader.astro';
 import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
 ---
 
 <Layout title="Welcome to Astro." description="Hi!">
@@ -15,77 +16,7 @@ import Hero from '../components/Hero.astro';
 
     <Hero />
 
-    <!-- About Start -->
-    <div class="about-area-2 section-padding-07">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 text-lg-left text-center">
-            <div class="thumnail-wrap">
-              <div class="about-thumbnails">
-                <img
-                  src="/images/shape/about2shape1.png"
-                  alt="shape"
-                  class="about-shape-1 img-fluid"
-                />
-                <img
-                  src="/images/shape/about2shape2.png"
-                  alt="shape"
-                  class="about-shape-2"
-                />
-                <div class="main-img">
-                  <img
-                    src="/images/h2about1.jpg"
-                    alt="About-img"
-                    class="about-img-1 img-fluid"
-                  />
-                  <img
-                    src="/images/h2about2.jpg"
-                    alt="About-img"
-                    class="about-img-2 img-fluid"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="about-content">
-              <div class="about-title">
-                <span class="title-numb">25</span>
-                <div class="section-title">
-                  <h2 class="title">
-                    International<br />Business confernce
-                  </h2>
-                </div>
-                <p class="section-paragraph">
-                  We’re inviting the top creatives in the tech industry from all
-                  over the world to come learn, grow, scrape their knees, try
-                  new things, to be vulnerable, and to have epic adventures
-                </p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-6">
-                <div class="abot-event">
-                  <img src="/images/calender-icon.png" alt="calender" />
-                  <h5>When start</h5>
-                  <p>21th - 24th<br />February 2022</p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="abot-event">
-                  <img src="/images/world-icon.png" alt="calender" />
-                  <h5>Where to</h5>
-                  <p>
-                    Zhylianska St, 97б, Kyiv,<br />Ukraine.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- About End -->
+    <About />
 
     <!-- Brand Start -->
     <div class="brand-area-2 section-padding-07">
