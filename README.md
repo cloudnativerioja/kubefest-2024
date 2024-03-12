@@ -5,17 +5,26 @@
 Inside of your Astro project, you'll see the following folders and files:
 
 ```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+.
+├── infra
+│   ├── backend.tf
+│   ├── main.tf
+│   ├── provider.tf
+│   └── variables.tf
+├── public
+│   ├── CNAME
+│   ├── favicon.svg
+│   └── images
+├── src
+│   ├── components
+│   ├── layouts
+│   ├── pages
+│   └── styles
+├── astro.config.mjs
+├── README.md
+├── package.json
+├── tsconfig.json
+└── yarn.lock
 ```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
