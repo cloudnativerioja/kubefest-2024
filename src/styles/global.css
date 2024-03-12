@@ -1478,7 +1478,7 @@ textarea:-ms-input-placeholder {
 
 @media only screen and (max-width: 1199px) {
   .header-menu .main-menu li {
-    padding: 30px 20px;
+    padding: 25px 10px;
   }
 }
 
@@ -2551,7 +2551,7 @@ textarea:-ms-input-placeholder {
 }
 
 .exvent-hero-section-02 .exvent-hero-title {
-  padding: 160px 0;
+  padding: 100px 0;
   position: relative;
   z-index: 3;
 }
@@ -2564,7 +2564,7 @@ textarea:-ms-input-placeholder {
 
 @media only screen and (max-width: 1199px) {
   .exvent-hero-section-02 .exvent-hero-title {
-    padding: 80px 0;
+    padding: 50px 0;
   }
 }
 
@@ -2573,6 +2573,11 @@ textarea:-ms-input-placeholder {
   text-transform: uppercase;
   font-size: 130px;
   line-height: 1;
+}
+
+.exvent-hero-section-02 .exvent-hero-title .title img {
+  width: 100%;
+  padding: 0 30px;
 }
 
 .exvent-hero-section-02 .exvent-hero-title .description {
@@ -2616,7 +2621,7 @@ textarea:-ms-input-placeholder {
 
 @media only screen and (max-width: 991px) {
   .exvent-hero-section-02 .exvent-hero-title .sub-title {
-    margin-top: 20px;
+    margin-top: 5px;
     font-size: 24px;
     letter-spacing: 5px;
   }
