@@ -1080,11 +1080,11 @@ textarea:-ms-input-placeholder {
 .submit_btn,
 .btn-5 {
   display: inline;
-  width: 100%;
+  width: 150px;
   font-size: 16px;
   text-decoration: none;
   background-color: #ffae4a;
-  padding: 15px 0;
+  padding: 10px 0;
   border: none;
   color: #fff;
   position: relative;
@@ -2505,7 +2505,7 @@ textarea:-ms-input-placeholder {
 @media only screen and (max-width: 1199px) {
   .exvent-hero-section-02 {
     height: auto;
-    padding-bottom: 100px;
+    padding-bottom: 170px;
   }
 }
 
@@ -2573,6 +2573,12 @@ textarea:-ms-input-placeholder {
   text-transform: uppercase;
   font-size: 130px;
   line-height: 1;
+}
+
+.exvent-hero-section-02 .exvent-hero-title .description {
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 2;
 }
 
 @media only screen and (max-width: 1199px) {
