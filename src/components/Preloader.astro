@@ -1,0 +1,31 @@
+---
+interface Props {
+  delay: number;
+}
+
+const { delay } = Astro.props;
+---
+
+<!-- Preloader start -->
+<div id="preloader">
+  <div class="preloader">
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<!-- Preloader End -->
+
+<script define:vars={{ delay }}>
+  window.addEventListener('load', (event) => {
+    const preloader = document.getElementById('preloader');
+    if (preloader !== null) {
+      setTimeout(() => {
+        preloader.style.transition = 'opacity 0.5s ease';
+        preloader.style.opacity = '0';
+        setTimeout(() => {
+          preloader.style.display = 'none';
+        }, delay);
+      }, delay);
+    }
+  });
+</script>

@@ -1,0 +1,60 @@
+---
+import Countdown from './Countdown.astro';
+import TicketsButton from './TicketsButton.astro';
+---
+
+<!-- Hero Start -->
+<div
+  class="section exvent-hero-section-02"
+  style="background-image: url(/images/bg/kubecon.jpg);"
+>
+  <img
+    class="shape-1 img-fluid"
+    src="/images/shape/hero-fade-shape1.png"
+    alt="Shape"
+  />
+  <img
+    class="shape-2 img-fluid"
+    src="/images/shape/hero-fade-shape2.png"
+    alt="Shape"
+  />
+  <div class="hero-shape-3"></div>
+
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-8">
+        <div class="exvent-hero-title text-center">
+          <h1 class="title" data-aos="fade-down" data-aos-delay="600">
+            <img src="/images/logo/kubefest-logo-white.svg" alt="Kubefest" />
+          </h1>
+          <h5 class="sub-title" data-aos="fade-down" data-aos-delay="800">
+            6 Abril 2024
+          </h5>
+          <p class="description" data-aos="fade-down" data-aos-delay="800">
+            Descubre Kubernetes en La Rioja
+          </p>
+          <img
+            src="/images/shape/hero-2-shape1.png"
+            alt="Shape"
+            class="shape-3 img-fluid opacity-75"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="row justify-content-center"
+      data-aos="fade-left"
+      data-aos-delay="650"
+    >
+      <div class="col-md-10 text-center">
+        <Countdown date="2024/04/06" />
+        <div class="pt-5">
+          <TicketsButton />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hero End -->

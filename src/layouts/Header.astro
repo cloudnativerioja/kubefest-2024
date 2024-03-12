@@ -1,0 +1,46 @@
+---
+import TicketsButton from '../components/TicketsButton.astro';
+---
+
+<!-- Header Start Transparent header  -->
+<div id="header" class="section exvent-header-2">
+  <div class="container">
+    <!-- Header Wrap Start  -->
+    <div
+      class="header-wrap p-0 d-flex align-items-center justify-content-center"
+    >
+      <div class="header-menu">
+        <ul class="main-menu">
+          <li>
+            <a href="#about">Info</a>
+          </li>
+          <li>
+            <a href="#speakers">Speakers</a>
+          </li>
+          <li>
+            <a href="#schedule">Agenda</a>
+          </li>
+          <li>
+            <a href="#sponsors">Sponsors</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Header Wrap End  -->
+  </div>
+</div>
+<!-- Header End -->
+
+<script>
+  window.onscroll = () => {
+    const left = document.getElementById('header');
+
+    if (left !== null) {
+      if (left.scrollTop > 50 || self.scrollY > 50) {
+        left.classList.add('sticky');
+      } else {
+        left.classList.remove('sticky');
+      }
+    }
+  };
+</script>
