@@ -6,7 +6,7 @@ resource "cloudflare_zone" "kubefest" {
 }
 
 resource "cloudflare_record" "kubefest_com" {
-  zone_id = "kubefest.com"
+  zone_id = cloudflare_zone.kubefest.id
   name    = "kubefest.com"
   value   = "cloudnativerioja.github.io"
   type    = "CNAME"
