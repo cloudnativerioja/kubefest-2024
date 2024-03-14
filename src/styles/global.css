@@ -2125,6 +2125,13 @@ textarea:-ms-input-placeholder {
   animation: sticky 1s;
 }
 
+.only-sticky {
+  display: none;
+}
+
+.sticky .only-sticky {
+  display: block;
+}
 /*--
 /*  2.3 - Header Offcanvas CSS
 /*----------------------------------------*/
@@ -2498,7 +2505,7 @@ textarea:-ms-input-placeholder {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 1020px;
+  height: 960px;
   z-index: 1;
 }
 
@@ -3764,11 +3771,12 @@ textarea:-ms-input-placeholder {
 }
 
 .about-area-2 .about-content .about-title .title-numb {
-  font-size: 80px;
+  font-size: 50px;
   font-family: "Ubuntu", sans-serif;
   line-height: 1;
   font-weight: 700;
   color: #ffae4a;
+  text-transform: uppercase;
 }
 
 .about-area-2 .about-content .about-title .section-title {
@@ -9794,6 +9802,7 @@ textarea:-ms-input-placeholder {
   background-color: #120525;
   position: relative;
   z-index: 3;
+  overflow: hidden;
 }
 
 .footer-section-3 .footer-shape {

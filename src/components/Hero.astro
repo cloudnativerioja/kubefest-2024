@@ -9,11 +9,15 @@ import TicketsButton from './TicketsButton.astro';
   style="background-image: url(/images/bg/kubecon.jpg);"
 >
   <img
+    data-aos="fade-left"
+    data-aos-delay="600"
     class="shape-1 img-fluid"
     src="/images/shape/hero-fade-shape1.png"
     alt="Shape"
   />
   <img
+    data-aos="fade-right"
+    data-aos-delay="600"
     class="shape-2 img-fluid"
     src="/images/shape/hero-fade-shape2.png"
     alt="Shape"
@@ -49,7 +53,7 @@ import TicketsButton from './TicketsButton.astro';
     >
       <div class="col-md-10 text-center">
         <Countdown date="2024/04/06" />
-        <div class="pt-5">
+        <div class="pt-5 mt-3 d-block d-lg-none">
           <TicketsButton />
         </div>
       </div>
