@@ -6,9 +6,17 @@ import TicketsButton from '../components/TicketsButton.astro';
 <div id="header" class="section exvent-header-2">
   <div class="container">
     <!-- Header Wrap Start  -->
-    <div
-      class="header-wrap p-0 d-flex align-items-center justify-content-center"
-    >
+    <div class="header-wrap p-0 d-flex">
+      <div class="header-logo">
+        <a href="/" class="only-sticky d-none d-lg-block opacity-75">
+          <img
+            height="40"
+            src="/images/logo/logo-cncf-rioja.svg"
+            alt="Cloud Native Rioja"
+          />
+        </a>
+      </div>
+
       <div class="header-menu">
         <ul class="main-menu">
           <li>
@@ -25,6 +33,12 @@ import TicketsButton from '../components/TicketsButton.astro';
           </li>
         </ul>
       </div>
+
+      <div class="header-btn">
+        <div class="only-sticky d-none d-lg-block">
+          <TicketsButton />
+        </div>
+      </div>
     </div>
     <!-- Header Wrap End  -->
   </div>
@@ -35,12 +49,10 @@ import TicketsButton from '../components/TicketsButton.astro';
   window.onscroll = () => {
     const left = document.getElementById('header');
 
-    if (left !== null) {
-      if (left.scrollTop > 50 || self.scrollY > 50) {
-        left.classList.add('sticky');
-      } else {
-        left.classList.remove('sticky');
-      }
+    if (left.scrollTop > 550 || self.scrollY > 550) {
+      left.classList.add('sticky');
+    } else {
+      left.classList.remove('sticky');
     }
   };
 </script>
