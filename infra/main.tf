@@ -18,3 +18,11 @@ resource "cloudflare_record" "www_kubefest_com" {
   value   = "cloudnativerioja.github.io"
   type    = "CNAME"
 }
+
+# Google Search Console verification
+resource "cloudflare_record" "gsc_kubefest_com" {
+  zone_id = cloudflare_zone.kubefest.id
+  name    = "kubefest.com"
+  value   = "google-site-verification=eTKt9_NpprU6T0FDPi-He0oZirSyEZqDMOBqmKfMNpc"
+  type    = "TXT"
+}
