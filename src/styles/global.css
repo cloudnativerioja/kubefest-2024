@@ -4823,9 +4823,6 @@ textarea:-ms-input-placeholder {
     text-align: center;
     border: 0;
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
   }
 }
 
@@ -4921,7 +4918,11 @@ textarea:-ms-input-placeholder {
   .shedule-row
   .schedule-thumbnail
   .schedule-thumb-img {
-  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: grayscale(0.5);
 }
 
 @media only screen and (max-width: 575px) {
@@ -4937,7 +4938,7 @@ textarea:-ms-input-placeholder {
 
 .schedule-area .schedule-wrapper .single-schedule .schedule-content-wrap {
   padding-left: 39px;
-  padding-right: 90px;
+  padding-right: 60px;
   position: relative;
 }
 
@@ -5335,8 +5336,8 @@ textarea:-ms-input-placeholder {
 }
 
 .schedule-area-2 .schedule-wrapper .single-schedule .schedule-content-wrap {
-  padding-left: 39px;
-  padding-right: 90px;
+  padding-left: 70px;
+  padding-right: 40px;
   position: relative;
 }
 
