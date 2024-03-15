@@ -42,6 +42,16 @@ const { title, description } = Astro.props;
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNDDQK785Q"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-PNDDQK785Q');
+    </script>
   </head>
   <body>
     <slot />
