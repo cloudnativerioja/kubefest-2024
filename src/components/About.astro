@@ -1,3 +1,13 @@
+---
+import { Image } from "astro:assets";
+
+import About2Shape2 from "@/images/shape/about2shape2.png";
+import KudeDay from "@/images/kubeday.jpg";
+import KubeDay2 from "@/images/kubeday-2.jpg";
+import CalenderIcon from "@/images/calender-icon.png";
+import WorldIcon from "@/images/world-icon.png";
+---
+
 <!-- About Start -->
 <div id="about" class="about-area-2 section-padding-07">
   <div class="container">
@@ -5,19 +15,19 @@
       <div class="col-xxl-7 col-lg-6 text-lg-left text-center">
         <div class="thumnail-wrap">
           <div class="about-thumbnails">
-            <img
-              src="/images/shape/about2shape2.png"
+            <Image
+              src={About2Shape2}
               alt="shape"
               class="about-shape-2"
             />
             <div class="main-img">
-              <img
-                src="/images/kubeday.jpg"
+              <Image
+                src={KudeDay}
                 alt="KubeDay Rioja SDI"
                 class="about-img-1 img-fluid"
               />
-              <img
-                src="/images/kubeday-2.jpg"
+              <Image
+                src={KubeDay2}
                 alt="KubeDay Rioja Stand"
                 class="about-img-2 img-fluid"
               />
@@ -46,14 +56,14 @@
         <div class="row">
           <div class="col-6">
             <div class="abot-event">
-              <img src="/images/calender-icon.png" alt="calender" />
+              <Image src={CalenderIcon} alt="calender" />
               <h5>¿Cuando?</h5>
               <p>6 Abril 2024<br />9:30</p>
             </div>
           </div>
           <div class="col-6">
             <div class="abot-event">
-              <img src="/images/world-icon.png" alt="calender" />
+              <Image src={WorldIcon} alt="calender" />
               <h5>¿Donde?</h5>
               <p>
                 <a

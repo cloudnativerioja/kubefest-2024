@@ -9838,8 +9838,11 @@ textarea:-ms-input-placeholder {
   display: inline-block;
 }
 
-.footer-section-3 .footer-widget-social .social-list li a {
+.footer-section-3 .footer-widget-social .social-list li a { 
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-section-3 .footer-widget-social .social-list li:nth-child(1) a {

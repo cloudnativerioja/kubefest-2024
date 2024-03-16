@@ -1,3 +1,16 @@
+---
+import { Image } from "astro:assets";
+
+import Google from "@/images/sponsor/google.svg";
+import Cncf from "@/images/sponsor/cncf.svg";
+import Bosonit from "@/images/sponsor/bosonit.svg";
+import Fer from "@/images/sponsor/fer.svg";
+import GlobantCreate from "@/images/sponsor/globant-create.svg";
+import Civo from "@/images/sponsor/civo.svg";
+import Aertic from "@/images/sponsor/aertic.svg";
+
+---
+
 <!-- Brand Start -->
 <div id="sponsors" class="brand-area section-padding-01 pb-5">
   <div class="container">
@@ -19,15 +32,15 @@
             rel="nofollow"
             href="https://developers.google.com/community/devfest"
           >
-            <img src="/images/sponsor/google.svg" alt="Google Developers" />
+            <Image src={Google} alt="Google Developers" />
           </a>
         </div>
       </div>
       <div class="col-md-4 col-7 d-flex align-items-center">
         <div class="brand-item">
           <a target="_blank" rel="nofollow" href="https://www.cncf.io/">
-            <img
-              src="/images/sponsor/cncf.svg"
+            <Image
+              src={Cncf}
               alt="Cloud Native Computing Foundation (CNCF)"
             />
           </a>
@@ -36,16 +49,18 @@
       <div class="col-md-3 col-6 d-flex align-items-center">
         <div class="brand-item">
           <a target="_blank" rel="nofollow" href="https://bosonit.com">
-            <img class="mb-2" src="/images/sponsor/bosonit.svg" alt="Bosonit" />
+            <Image class="mb-2" src={Bosonit} alt="Bosonit" />
           </a>
         </div>
       </div>
       <div class="col-md-2 col-5 d-flex align-items-center">
         <div class="brand-item">
           <a target="_blank" rel="nofollow" href="https://sie.fer.es/">
-            <img
+            <Image
               class="px-3"
-              src="/images/sponsor/fer.svg"
+              src={Fer}
+              width={156}
+              height={156}
               alt="Federación de Empresas de La Rioja (FER)"
             />
           </a>
@@ -58,8 +73,8 @@
             rel="nofollow"
             href="https://www.globant.com/studio/create"
           >
-            <img
-              src="/images/sponsor/globant-create.svg"
+            <Image
+              src={GlobantCreate}
               alt="Globant Create"
             />
           </a>
@@ -68,15 +83,15 @@
       <div class="col-md-3 col-6 d-flex align-items-center">
         <div class="brand-item">
           <a target="_blank" rel="nofollow" href="https://www.civo.com/">
-            <img src="/images/sponsor/civo.svg" alt="Civo" />
+            <Image src={Civo} alt="Civo" height={200} />
           </a>
         </div>
       </div>
       <div class="col-md-3 col-6 d-flex align-items-center">
         <div class="brand-item">
           <a target="_blank" rel="nofollow" href="https://aertic.es/">
-            <img
-              src="/images/sponsor/aertic.svg"
+            <Image
+              src={Aertic}
               alt="Agrupación Empresarial Innovadora del sector TIC de La Rioja (Aertic)"
             />
           </a>
