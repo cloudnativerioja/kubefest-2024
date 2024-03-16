@@ -1,25 +1,31 @@
 ---
+import { Image } from 'astro:assets';
 import Countdown from './Countdown.astro';
 import TicketsButton from './TicketsButton.astro';
+import HeroFadeShape1 from "@/images/shape/hero-fade-shape1.png";
+import HeroFadeShape2 from "@/images/shape/hero-fade-shape2.png";
+import Hero2Shape1 from "@/images/shape/hero-2-shape1.png";
+import KubefestLogoWhite from "@/images/logo/kubefest-logo-white.svg";
+import KubeconBg from "@/images/bg/kubecon.jpg";
 ---
 
 <!-- Hero Start -->
 <div
   class="section exvent-hero-section-02"
-  style="background-image: url(/images/bg/kubecon.jpg);"
+  style={`background-image: url("${KubeconBg.src}");`}
 >
-  <img
+  <Image
     data-aos="fade-left"
     data-aos-delay="600"
     class="shape-1 img-fluid"
-    src="/images/shape/hero-fade-shape1.png"
+    src={HeroFadeShape1}
     alt="Shape"
   />
-  <img
+  <Image
     data-aos="fade-right"
     data-aos-delay="600"
     class="shape-2 img-fluid"
-    src="/images/shape/hero-fade-shape2.png"
+    src={HeroFadeShape2}
     alt="Shape"
   />
   <div class="hero-shape-3"></div>
@@ -28,7 +34,7 @@ import TicketsButton from './TicketsButton.astro';
       <div class="col-md-8">
         <div class="exvent-hero-title text-center">
           <h1 class="title" data-aos="fade-down" data-aos-delay="600">
-            <img src="/images/logo/kubefest-logo-white.svg" alt="Kubefest" />
+            <Image src={KubefestLogoWhite} alt="Kubefest" />
           </h1>
           <h5 class="sub-title" data-aos="fade-down" data-aos-delay="800">
             6 Abril 2024
@@ -36,8 +42,8 @@ import TicketsButton from './TicketsButton.astro';
           <p class="description" data-aos="fade-down" data-aos-delay="800">
             Descubre Kubernetes en La Rioja
           </p>
-          <img
-            src="/images/shape/hero-2-shape1.png"
+          <Image
+            src={Hero2Shape1}
             alt="Shape"
             class="shape-3 img-fluid opacity-75"
             data-aos="fade-right"

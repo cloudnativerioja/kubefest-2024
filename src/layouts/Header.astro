@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import TicketsButton from '../components/TicketsButton.astro';
+import Logo from "@/images/logo/logo-cncf-rioja.svg"
 ---
 
 <!-- Header Start Transparent header  -->
@@ -9,9 +11,9 @@ import TicketsButton from '../components/TicketsButton.astro';
     <div class="header-wrap p-0 d-flex">
       <div class="header-logo">
         <a href="/" class="only-sticky d-none d-lg-block opacity-75">
-          <img
-            height="40"
-            src="/images/logo/logo-cncf-rioja.svg"
+          <Image
+            src={Logo}
+            height={40}
             alt="Cloud Native Rioja"
           />
         </a>

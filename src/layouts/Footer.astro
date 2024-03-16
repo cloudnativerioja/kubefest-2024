@@ -1,7 +1,16 @@
+---
+import FooterImage from "@/images/shape/footer_shape_h3.png"
+import { Image } from "astro:assets"
+import Link from "@/icons/Link.astro"
+import GitHub from "@/icons/GitHub.astro"
+import LinkedIn from "@/icons/LinkedIn.astro"
+import YouTube from "@/icons/YouTube.astro"
+---
+
 <!-- Footer Section Start -->
 <div class="footer-section footer-section-3">
-  <img
-    src="/images/shape/footer_shape_h3.png"
+  <Image
+    src={FooterImage}
     alt="Shape"
     class="footer-shape"
   />
@@ -17,12 +26,12 @@
           <ul class="social-list">
             <li>
               <a target="_blank" href="https://cloudnativerioja.com">
-                <i class="fa-solid fa-link"></i>
+                <Link height="24" />
               </a>
             </li>
             <li>
               <a target="_blank" href="https://github.com/cloudnativerioja">
-                <i class="fab fa-github"></i>
+                <GitHub height="24" />
               </a>
             </li>
             <li>
@@ -30,7 +39,7 @@
                 target="_blank"
                 href="https://www.linkedin.com/company/cloud-native-rioja/"
               >
-                <i class="fab fa-linkedin"></i>
+                <LinkedIn height="24" />
               </a>
             </li>
             <li>
@@ -38,7 +47,7 @@
                 target="_blank"
                 href="https://www.youtube.com/channel/UCPJSWBgMthDZ_VYAopkbA7w"
               >
-                <i class="fab fa-youtube"></i>
+                <YouTube height="24" />
               </a>
             </li>
           </ul>

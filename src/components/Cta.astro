@@ -1,15 +1,20 @@
 ---
+import { Image } from 'astro:assets';
 import TicketsButton from './TicketsButton.astro';
+import CTAShape1 from '@/images/shape/cta_shape_1.png';
+import CTAShape2 from '@/images/shape/cta_shape_2.png';
+import CTAShape3 from '@/images/shape/cta_shape_3.png';
+import FooterBG1 from '@/images/bg/footer_bg1.jpg';
 ---
 
 <!-- CTA Area Start -->
 <div
   class="cta-area section-padding-04"
-  style="background-image: url(/images/bg/footer_bg1.jpg);"
+  style={`background-image: url("${FooterBG1.src}");`}
 >
-  <img src="/images/shape/cta_shape_1.png" alt="Shape" class="cta-shape-1" />
-  <img src="/images/shape/cta_shape_2.png" alt="Shape" class="cta-shape-2" />
-  <img src="/images/shape/cta_shape_3.png" alt="Shape" class="cta-shape-3" />
+  <Image src={CTAShape1} alt="Shape" class="cta-shape-1" />
+  <Image src={CTAShape2} alt="Shape" class="cta-shape-2" />
+  <Image src={CTAShape3} alt="Shape" class="cta-shape-3" />
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-8 text-center">
