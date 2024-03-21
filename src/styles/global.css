@@ -6820,90 +6820,6 @@ textarea:-ms-input-placeholder {
   opacity: 0.5;
 }
 
-.event-countdown-5 {
-  position: relative;
-  z-index: 5;
-  padding: 0 0;
-}
-
-.event-countdown-5::after {
-  display: none;
-}
-
-.event-countdown-5 .counter-wrapper {
-  transform: translateY(-100px);
-  padding: 60px 0;
-  background: #ffffff url("../images/shape/counter-pattarn-bg.png") left top
-    no-repeat;
-  border-radius: 10px;
-  box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.15);
-}
-
-.event-countdown-5 .counter-wrapper .counter-content-left .counter-title {
-  font-size: 36px;
-  text-transform: capitalize;
-}
-
-.event-countdown-5 .counter-wrapper .counter-content-left .counter-subtitle {
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
-
-.event-countdown-5
-  .counter-wrapper
-  .exvent-countdown-inner-5
-  .single-countdown {
-  display: inline-block;
-  text-align: center;
-  padding: 0 40px;
-  position: relative;
-  z-index: 3;
-}
-
-.event-countdown-5
-  .counter-wrapper
-  .exvent-countdown-inner-5
-  .single-countdown::after {
-  content: ":";
-  position: absolute;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 68px;
-  right: -10px;
-  top: -35px;
-  color: #1a0a1e;
-}
-
-.event-countdown-5
-  .counter-wrapper
-  .exvent-countdown-inner-5
-  .single-countdown
-  .count {
-  font-size: 62px;
-  color: #1a0a1e;
-  font-weight: 600;
-  line-height: 1;
-  position: relative;
-}
-
-.event-countdown-5
-  .counter-wrapper
-  .exvent-countdown-inner-5
-  .single-countdown
-  .value {
-  display: block;
-  font-size: 16px;
-  color: #fc097c;
-}
-
-.event-countdown-5
-  .counter-wrapper
-  .exvent-countdown-inner-5
-  .single-countdown:last-child::after {
-  display: none;
-}
-
 @media only screen and (max-width: 1199px) {
   .event-countdown-2 .counter-wrapper {
     height: 225px;
@@ -6943,12 +6859,6 @@ textarea:-ms-input-placeholder {
     text-align: center;
     margin-bottom: 30px;
   }
-  .event-countdown-5 .counter-wrapper {
-    background-image: none;
-  }
-  .event-countdown-5 .counter-wrapper .exvent-countdown-inner-5 {
-    padding: 0 20px;
-  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -6984,18 +6894,6 @@ textarea:-ms-input-placeholder {
     .single-countdown::after {
     font-size: 64px;
   }
-  .event-countdown-5
-    .counter-wrapper
-    .exvent-countdown-inner-5
-    .single-countdown {
-    margin-bottom: 25px;
-  }
-  .event-countdown-5
-    .counter-wrapper
-    .exvent-countdown-inner-5
-    .single-countdown:first-child {
-    padding-left: 0;
-  }
 }
 
 @media only screen and (max-width: 449px) {
@@ -7023,24 +6921,6 @@ textarea:-ms-input-placeholder {
     font-size: 32px;
     top: -15px;
     right: -5px;
-  }
-  .event-countdown-5
-    .counter-wrapper
-    .exvent-countdown-inner-5
-    .single-countdown {
-    margin-bottom: 25px;
-  }
-  .event-countdown-5
-    .counter-wrapper
-    .exvent-countdown-inner-5
-    .single-countdown:first-child {
-    padding-left: 40px;
-  }
-  .event-countdown-5
-    .counter-wrapper
-    .exvent-countdown-inner-5
-    .single-countdown::after {
-    display: none;
   }
 }
 
@@ -9456,7 +9336,6 @@ textarea:-ms-input-placeholder {
   width: 100%;
   top: 0;
   left: 0;
-  background-image: url("../images/shape/footer_contact_object.png");
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -1;

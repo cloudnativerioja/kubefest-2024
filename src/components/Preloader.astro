@@ -15,8 +15,8 @@ const { delay } = Astro.props;
 </div>
 <!-- Preloader End -->
 
-<script define:vars={{ delay }}>
-  window.addEventListener('load', (event) => {
+<script is:inline define:vars={{ delay }}>
+  window.addEventListener('load', () => {
     const preloader = document.getElementById('preloader');
     if (preloader !== null) {
       setTimeout(() => {
