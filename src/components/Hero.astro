@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import Countdown from './Countdown.astro';
 import TicketsButton from './TicketsButton.astro';
 import HeroFadeShape1 from '@/images/shape/hero-fade-shape1.png';
@@ -7,12 +7,14 @@ import HeroFadeShape2 from '@/images/shape/hero-fade-shape2.png';
 import Hero2Shape1 from '@/images/shape/hero-2-shape1.png';
 import KubefestLogoWhite from '@/images/logo/kubefest-logo-white.svg';
 import KubeconBg from '@/images/bg/kubecon.jpg';
+
+const optimizedKubeconBg = await getImage({ src: KubeconBg });
 ---
 
 <!-- Hero Start -->
 <div
   class="section exvent-hero-section-02"
-  style={`background-image: url("${KubeconBg.src}");`}
+  style={`background-image: url('${optimizedKubeconBg.src}')`}
 >
   <Image
     data-aos="fade-left"

@@ -28,7 +28,7 @@ const { date } = Astro.props;
 <!-- Countdown End -->
 
 <script>
-  function makeTimer(endDate, element) {
+  function makeTimer(endDate: string, element: Element) {
     var today = new Date();
     var bigDay = new Date(endDate),
       msPerDay = 24 * 60 * 60 * 1000,
@@ -39,7 +39,6 @@ const { date } = Astro.props;
       hrsLeft = Math.floor(e_hrsLeft),
       e_minsLeft = (e_hrsLeft - hrsLeft) * 60,
       minsLeft = Math.floor((e_hrsLeft - hrsLeft) * 60),
-      e_secsLeft = (e_minsLeft - minsLeft) * 60,
       secsLeft = Math.floor((e_minsLeft - minsLeft) * 60);
 
     var yearsLeft = 0;
@@ -82,46 +81,46 @@ const { date } = Astro.props;
     var elNumber = markup.wrapper.length;
     element.classList.add('item-' + elNumber);
     markup.year.forEach(function (el) {
-      el.innerHTML = yearsLeftStr;
+      el.innerHTML = yearsLeftStr.toString();
     });
     markup.yearTxt.forEach(function (el) {
-      el.innerHTML = yearsText;
+      el.innerHTML = yearsText.toString();
     });
     markup.month.forEach(function (el) {
-      el.innerHTML = monthsLeftStr;
+      el.innerHTML = monthsLeftStr.toString();
     });
     markup.monthTxt.forEach(function (el) {
-      el.innerHTML = monthsText;
+      el.innerHTML = monthsText.toString();
     });
     markup.week.forEach(function (el) {
-      el.innerHTML = weeksLeftStr;
+      el.innerHTML = weeksLeftStr.toString();
     });
     markup.weekTxt.forEach(function (el) {
-      el.innerHTML = weeksText;
+      el.innerHTML = weeksText.toString();
     });
     markup.day.forEach(function (el) {
-      el.innerHTML = daysLeftStr;
+      el.innerHTML = daysLeftStr.toString();
     });
     markup.dayTxt.forEach(function (el) {
-      el.innerHTML = daysText;
+      el.innerHTML = daysText.toString();
     });
     markup.hour.forEach(function (el) {
-      el.innerHTML = hrsLeftStr;
+      el.innerHTML = hrsLeftStr.toString();
     });
     markup.hourTxt.forEach(function (el) {
-      el.innerHTML = hourText;
+      el.innerHTML = hourText.toString();
     });
     markup.minute.forEach(function (el) {
-      el.innerHTML = minsLeftStr;
+      el.innerHTML = minsLeftStr.toString();
     });
     markup.minTxt.forEach(function (el) {
-      el.innerHTML = minsText;
+      el.innerHTML = minsText.toString();
     });
     markup.second.forEach(function (el) {
-      el.innerHTML = secsLeftStr;
+      el.innerHTML = secsLeftStr.toString();
     });
     markup.secTxt.forEach(function (el) {
-      el.innerHTML = secText;
+      el.innerHTML = secText.toString();
     });
   }
 

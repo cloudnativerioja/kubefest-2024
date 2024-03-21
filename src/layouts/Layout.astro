@@ -32,8 +32,10 @@ const { title, description } = Astro.props;
     <meta property="og:image:type" content="image/png" />
     <title>{title}</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNDDQK785Q"
-    ></script>
+    <script
+      is:inline
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PNDDQK785Q"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
