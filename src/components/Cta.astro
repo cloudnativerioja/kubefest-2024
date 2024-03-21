@@ -1,16 +1,18 @@
 ---
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import TicketsButton from './TicketsButton.astro';
 import CTAShape1 from '@/images/shape/cta_shape_1.png';
 import CTAShape2 from '@/images/shape/cta_shape_2.png';
 import CTAShape3 from '@/images/shape/cta_shape_3.png';
 import FooterBG1 from '@/images/bg/footer_bg1.jpg';
+
+const optimizedFooterBG1 = await getImage({ src: FooterBG1 });
 ---
 
 <!-- CTA Area Start -->
 <div
   class="cta-area section-padding-04"
-  style={`background-image: url("${FooterBG1.src}");`}
+  style={`background-image: url('${optimizedFooterBG1.src}')`}
 >
   <Image src={CTAShape1} alt="Shape" class="cta-shape-1" />
   <Image src={CTAShape2} alt="Shape" class="cta-shape-2" />
