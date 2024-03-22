@@ -5893,12 +5893,14 @@ textarea:-ms-input-placeholder {
 
 .brand-area .brand-item,
 .event-single-page .brand-item {
-  padding: 10px 20px;
+  padding: 25px 20px;
 }
 
 .brand-area .brand-item img,
 .event-single-page .brand-item img {
   width: 100%;
+  height: auto;
+  max-height: 70px;
 }
 
 .brand-area-2 .section-title {
