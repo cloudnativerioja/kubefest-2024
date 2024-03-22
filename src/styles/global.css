@@ -1090,6 +1090,7 @@ textarea:-ms-input-placeholder {
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+  border-radius: 40px;
 }
 
 .submit_btn::before,
@@ -2022,8 +2023,8 @@ textarea:-ms-input-placeholder {
   background-color: #250449;
 }
 
-.header-btn {
-  margin-left: 25px;
+.header-btn a {
+  padding: 5px 0;
 }
 
 .header-toggle {
@@ -2643,15 +2644,16 @@ textarea:-ms-input-placeholder {
 
 .exvent-hero-section-02 .exvent-hero-title .shape-3 {
   position: absolute;
-  left: -90px;
-  top: 80px;
+  left: -83px;
+  top: 50px;
   pointer-events: none;
-  z-index: -1;
+  z-index: -10;
 }
 
 @media only screen and (max-width: 991px) {
   .exvent-hero-section-02 .exvent-hero-title .shape-3 {
-    top: 0;
+    top: 70px;
+    zoom: 0.7;
   }
 }
 
@@ -5893,12 +5895,14 @@ textarea:-ms-input-placeholder {
 
 .brand-area .brand-item,
 .event-single-page .brand-item {
-  padding: 10px 20px;
+  padding: 25px 20px;
 }
 
 .brand-area .brand-item img,
 .event-single-page .brand-item img {
   width: 100%;
+  height: auto;
+  max-height: 70px;
 }
 
 .brand-area-2 .section-title {

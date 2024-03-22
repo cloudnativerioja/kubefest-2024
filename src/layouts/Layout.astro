@@ -1,6 +1,7 @@
 ---
 import 'bootstrap/dist/css/bootstrap.css';
-import '../styles/global.css';
+import 'aos/dist/aos.css';
+import '@/styles/global.css';
 
 interface Props {
   title: string;
@@ -31,12 +32,11 @@ const { title, description } = Astro.props;
     <meta property="og:image:height" content="1080" />
     <meta property="og:image:type" content="image/png" />
     <title>{title}</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
+      type="text/partytown"
       is:inline
-      async
       src="https://www.googletagmanager.com/gtag/js?id=G-PNDDQK785Q"></script>
-    <script is:inline>
+    <script is:inline type="text/partytown">
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
@@ -47,12 +47,12 @@ const { title, description } = Astro.props;
   </head>
   <body>
     <slot />
+    <script>
+      import AOS from 'aos';
+      AOS.init({
+        duration: 1200,
+        once: true
+      });
+    </script>
   </body>
-  <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script is:inline>
-    AOS.init({
-      duration: 1200,
-      once: true
-    });
-  </script>
 </html>
