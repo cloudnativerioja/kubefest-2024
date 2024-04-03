@@ -7,7 +7,7 @@ const { date } = Astro.props;
 ---
 
 <!-- Countdown Start -->
-<div class="exvent-countdown countdown" data-countdown={date}>
+<div class="exvent-countdown countdown fade-up" data-countdown={date}>
   <div class="single-countdown">
     <span class="count countdown__time daysLeft"></span>
     <span class="value countdown__time daysText"></span>
@@ -48,7 +48,7 @@ const { date } = Astro.props;
   }
 
   function updateCountdownMarkup(
-    element: Element,
+    element: HTMLElement,
     timeRemaining: { [key: string]: number }
   ): void {
     const units = ['days', 'hours', 'mins', 'secs'];
@@ -58,19 +58,32 @@ const { date } = Astro.props;
       const value = timeRemaining[unit + 'Left'];
       const text = value !== 1 ? texts[index] + 's' : texts[index];
 
-      element.querySelector(`.${unit}Left`).innerHTML = value
-        .toString()
-        .padStart(2, '0');
-      element.querySelector(`.${unit}Text`).innerHTML = text;
+      const unitLeftElement = element.querySelector(`.${unit}Left`);
+      const unitTextElement = element.querySelector(`.${unit}Text`);
+
+      if (unitLeftElement && unitTextElement) {
+        unitLeftElement.innerHTML = value.toString().padStart(2, '0');
+        unitTextElement.innerHTML = text;
+      }
     });
   }
 
-  function makeTimer(endDate: string, element: Element): void {
+  function makeTimer(endDate: string, element: HTMLElement): void {
     const timeRemaining = calculateTimeRemaining(endDate);
     updateCountdownMarkup(element, timeRemaining);
+
+    // Check if countdown has ended
+    if (
+      timeRemaining.daysLeft <= 0 &&
+      timeRemaining.hoursLeft <= 0 &&
+      timeRemaining.minsLeft <= 0 &&
+      timeRemaining.secsLeft <= 0
+    ) {
+      element.setAttribute('style', 'display: none;');
+    }
   }
 
-  document.querySelectorAll('.countdown').forEach((element: Element) => {
+  document.querySelectorAll('.countdown').forEach((element: HTMLElement) => {
     const endDate = element.getAttribute('data-countdown');
     setInterval(() => {
       makeTimer(endDate, element);
