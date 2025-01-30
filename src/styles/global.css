@@ -2513,7 +2513,7 @@ textarea:-ms-input-placeholder {
 @media only screen and (max-width: 1199px) {
   .exvent-hero-section-02 {
     height: auto;
-    padding-bottom: 170px;
+    padding-bottom: 120px;
   }
 }
 
@@ -2559,7 +2559,7 @@ textarea:-ms-input-placeholder {
 }
 
 .exvent-hero-section-02 .exvent-hero-title {
-  padding: 100px 0;
+  padding: 50px 0;
   position: relative;
   z-index: 3;
 }

@@ -1,7 +1,6 @@
 ---
 import { Image, getImage } from 'astro:assets';
-import Countdown from './Countdown.astro';
-import TicketsButton from './TicketsButton.astro';
+import { YouTube } from 'astro-embed';
 import HeroFadeShape1 from '@/images/shape/hero-fade-shape1.png';
 import HeroFadeShape2 from '@/images/shape/hero-fade-shape2.png';
 import Hero2Shape1 from '@/images/shape/hero-2-shape1.png';
@@ -78,13 +77,17 @@ const optimizedKubeconBg = await getImage({ src: KubeconBg });
       data-aos-delay="650"
       data-aos-duration="1200"
     >
-      <div class="col-md-10 text-center">
-        <Countdown date="2024/04/06" />
-        <div class="pt-5 mt-3 d-block d-lg-none">
-          <TicketsButton />
-        </div>
+      <div class="col-11 col-lg-6 mb-lg-8">
+        <YouTube id="Kq_CKHwE2p8" />
       </div>
     </div>
   </div>
 </div>
 <!-- Hero End -->
+
+<style>
+  lite-youtube {
+    border-radius: 20px;
+    box-shadow: 0px 0px 160px -46px rgba(0, 171, 238, 0.6);
+  }
+</style>

@@ -20,6 +20,7 @@
     "astro": "^4.5.2",
     "astro-bootstrap": "^0.6.2",
     "astro-compress": "^2.2.15",
+    "astro-embed": "^0.9.0",
     "astro-purgecss": "4.1.0",
     "bootstrap": "^5.3.3",
     "purgecss": "5.0.0",
